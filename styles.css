@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  font-family: "Outfit", sans-serif;
+}
+
+/** Navigation **/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.rainbow {
+  margin: 0 auto;
+  width: 20%;
+  height: 20%;
+}
+.rainbow:hover {
+  width: 25%;
+  height: 25%;
+  transition: all 0.5s;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 3px;
+  margin: 0;
+  text-shadow: 2px 2px 2px black;
+}
+
+.nav-links {
+  display: inline-flex;
+  list-style: none;
+  margin-left: 40%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/** Main Container **/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 50%;
+  gap: 20px;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+.btn {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  width: 50%;
+  justify-content: center;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: -2px 5px 14px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 5px 14px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 5px 14px -3px rgba(0, 0, 0, 0.75);
+  font-size: 1.3rem;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/** Media Queries **/
+
+@media (max-width: 480px) {
+  .rainbow {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+  }
+  .rainbow:hover {
+    width: 30%;
+    height: 30%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  .nav-links {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .main-container {
+    width: 90%;
+  }
+  .main-container h2 {
+    font-size: 1.3rem;
+  }
+}
+
